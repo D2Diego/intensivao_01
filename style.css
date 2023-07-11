@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização header */
+:root {
+    --ff-body: font-family: 'Mulish', sans-serif;
+    --bg-header: hsla(283, 47%, 97%, 1);
+    --bg-fc-body: hsla(244, 38%, 28%, 1);
+    --bg-box_text: hsla(0, 0%, 100%, 1);
+    --text-color: hsla(320, 69%, 42%, 1);
+    font-size: 62.5%;
+}
+
+.mobile {
+    width: 43rem;
+    margin: auto;
+}
+
+header {
+    background-color: var(--bg-header);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header #contain1 img {
+    margin-bottom: 1.7rem;
+}
+
+header #contain2 h1 {
+    font-family: var(--ff-body);
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    line-height: 4rem;
+
+}
+
+header #contain2 p {
+    font-family: var(--ff-body);
+    font-size: 2rem;
+    color: var(--bg-fc-body);
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+
+}
+
+header img {
+
+    padding-bottom: 9.3rem;
+}
+
+/* Estilização header */
+
+
+/* Estilização main */
+
+main {
+    background-color: var(--bg-fc-body);
+    padding: 5.3rem 9.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.9rem;
+}
+
+.box_text {
+    display: flex;
+    flex-direction: column;
+    padding: 2.6rem;
+    background-color: var(--bg-box_text);
+
+    width: 35rem;
+
+    border-radius: 19.865px;
+    box-shadow: 0px 3.3107693195343018px 13.243077278137207px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box_text img {
+    object-fit: none;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 3.3rem;
+}
+
+.box_text h1 {
+    font-family: var(--ff-body);
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 900;
+    color: var(--text-color);
+    margin-bottom: 1.9rem;
+}
+
+.box_text p {
+    font-family: var(--ff-body);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Estilização main */
+
+/* Estilização footer */
+
+
+footer .teste {
+    background-color: var(--bg-header);
+    display: flex;
+    flex-direction: column;
+    padding: 7.8rem 0 6.5rem 4.3rem;
+    gap: 2.4rem;
+}
+
+footer h1 {
+    font-family: var(--ff-body);
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: 900;
+
+    margin-right: 118px;
+
+}
+
+footer .input_icon input {
+    width: 34rem;
+    height: 4rem;
+    border-radius: 16px;
+    border: 1.5px solid #312D64;
+    padding: 1.2rem 0 1.2rem 1.4rem;
+
+    font-family: var(--ff-body);
+    color: var(--bg-fc-body);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+footer textarea {
+    width: 34rem;
+    height: 12rem;
+    padding: 1.2rem 1.6rem;
+
+    border-radius: 16px;
+    border: 1.5px solid #312D64;
+
+    font-family: var(--ff-body);
+    color: var(--bg-fc-body);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 100%;
+
+    resize: none;
+}
+
+footer button {
+    border-radius: 16px;
+    background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+
+    padding: 1.6rem;
+
+    color: var(--neutral-colors-white, #FFF);
+    font-family: var(--ff-body);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+
+    height: 35px;
+    width: 15rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.footer_img img {
+    display: none;
+}
+
+/* Estilização footer */
+
+/* Estilizando rodapé */
+#rodape {
+    font-family: var(--ff-body);
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #FFF;
+
+    margin: auto;
+    width: auto;
+
+    background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    padding: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+/* Estilizando rodapé */
+
+
+/* Resposividade */
+@media (min-width: 930px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: row-reverse;
+        gap: 20rem;
+    }
+
+
+    main {
+        flex-direction: row;
+        padding: 64px 111px;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--bg-header);
+        display: flex;
+        flex-direction: row;
+        right: 0;
+        width: 100%;
+        gap: 35rem;
+
+    }
+
+    .footer_img {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .footer_img img {
+        display: block;
+
+
+    }
+
+}
+
+/* Resposividade */
